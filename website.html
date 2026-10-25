@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hermes Vision</title>
+<style>
+body {
+background-color: #f8f9fa;
+color: #333;
+font-family: Arial;
+  margin: 0px;
+}
+
+#topArea {
+  background-color: #ffffff;
+text-align: center;
+  padding: 50px 20px;
+border-bottom: 1px solid #ccc;
+}
+.bigBlueText {
+color: #0056b3;
+  font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.smallGrayText {
+  color: #555;
+    font-size: 18px;
+  width: 750px;
+margin: 0 auto;
+}
+
+  .middleContent {
+width: 1000px;
+  margin: 0 auto;
+    padding-top: 30px;
+  }
+
+.heading2 {
+  color: #222;
+border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+margin-bottom: 20px;
+}
+
+.flexRowStuffs {
+  display: flex;
+    flex-wrap: wrap;
+gap: 20px;
+  margin-bottom: 40px;
+}
+
+.theBoxes {
+  background-color: white;
+padding: 20px;
+    border: 1px solid #ddd;
+  width: 45%;
+border-radius: 5px;
+}
+.theBoxes:hover { border: 1px solid #0056b3; }
+
+.boxTitle {
+  color: #0056b3;
+margin-top: 0px;
+}
+
+.stepCards {
+background-color: white;
+  padding: 15px;
+border-radius: 5px;
+  border: 1px solid #ddd;
+width: 30%;
+}
+.stepCards h4 { margin-top: 0; color: #222; }
+
+#bottomFooter {
+  text-align: center;
+background-color: white;
+    padding: 20px;
+  border-top: 1px solid #ccc;
+margin-top: 50px;
+  color: #666;
+}
+</style>
+</head>
+<body>
+
+<div id="topArea">
+<h1 class="bigBlueText"> Hermes Vision </h1>
+<p class="smallGrayText"> Multi-Sensor Integration in Smart Glasses for Real-Time Driver Drowsiness Tracking and Adaptive AI-Based Alerting </p>
+</div>
+
+<div class="middleContent">
+    
+<br>
+<h2 class="heading2">Project Overview</h2>
+<p style="margin-bottom: 40px; line-height: 1.6;">
+Hermes Vision is a wearable driver-safety device designed to detect signs of driver drowsiness in real time. Instead of relying on a single metric, it combines computer vision, motion sensing, and physiological measurements to assess the driver's state and trigger appropriate warnings before fatigue contributes to an accident. 
+</p>
+
+<h2 class="heading2">Hardware & Sensors</h2>
+<div class="flexRowStuffs">
+    
+<div class="theBoxes">
+<h3 class="boxTitle">Inward-Facing Camera</h3>
+<p>Powered by an ESP32-S3 module with an OV3660 sensor. Monitors the driver's eyes and face (PERCLOS, blink frequency, gaze direction).</p>
+</div>
+
+<div class="theBoxes">
+<h3 class="boxTitle">MAX30102 Sensor</h3>
+<p>An optical pulse oximeter providing contextual physiological measurements:</p>
+<ul>
+<li>Heart Rate</li>
+<li>Blood Oxygen Saturation (SpO₂)</li>
+</ul>
+</div>
+
+<div class="theBoxes">
+<h3 class="boxTitle">MPU6050 Motion Sensor</h3>
+<p>A 3-axis accelerometer and gyroscope combo. Used to measure subtle head orientation changes and potential head-dropping events indicative of microsleeps.</p>
+</div>
+
+<div class="theBoxes">
+<h3 class="boxTitle">Power & Processing</h3>
+<p>Features a rechargeable battery, TP4056 charging module, and TPS63020 voltage regulator. Heavy computational tasks and emergency mapping are securely offloaded to a companion smartphone.</p>
+</div>
+
+</div>
+
+<h2 class="heading2">How The System Works</h2>
+<div class="flexRowStuffs">
+    
+<div class="stepCards">
+<h4>1. Data Collection</h4>
+<p>The inward camera, MAX30102, and MPU6050 simultaneously gather visual, physiological, and motion data from the driver.</p>
+</div>
+
+<div class="stepCards">
+<h4>2. Visual Processing</h4>
+<p>Analyzes blink duration and the proportion of time the eyes are substantially closed to calculate drowsiness indicators.</p>
+</div>
+
+<div class="stepCards">
+<h4>3. Gaze Calibration</h4>
+<p>Maps the driver's gaze to accepted zones: a forward road-view zone, and left/right mirror zones.</p>
+</div>
+
+<div class="stepCards">
+<h4>4. Multisensor Fusion</h4>
+<p>Combines visual eye-closure data with physical head-drop metrics to provide a highly reliable drowsiness assessment.</p>
+</div>
+
+<div class="stepCards">
+<h4>5. Alerts</h4>
+<p>Data is passed to a companion smartphone for heavy computation, which triggers adaptive, timely warnings to the driver.</p>
+</div>
+
+</div>
+
+</div>
+
+<div id="bottomFooter">
+<p> Copyright 2026 Hermes Vision Research Project. All rights reserved. </p>
+</div>
+
+</body>
+</html>
