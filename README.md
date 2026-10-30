@@ -8,8 +8,9 @@ Hermes Vision monitors signs of driver fatigue using eye movement, blinking, hea
 
 ## Project Overview
 
-<!-- Upload: A clear picture of the complete Hermes Vision glasses prototype -->
-![Hermes Vision Prototype](images/hermes-vision-prototype.jpg)
+
+<img width="1600" height="739" alt="image" src="https://github.com/user-attachments/assets/c00b6be6-1e6f-486c-848c-069c7289ef93" />
+
 
 ## How It Works
 
@@ -31,8 +32,6 @@ Hermes Vision monitors signs of driver fatigue using eye movement, blinking, hea
 - Custom-designed PCB
 - Battery and power management components
 
-<!-- Upload: A picture of the electronics and components -->
-![Hardware Components](images/hardware-components.jpg)
 
 ## PCB Design
 
