@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Hermes Vision") (type "KiCad") (uri "${KIPRJMOD}/Hermes Vision.pretty") (options "") (descr ""))
+)
