@@ -1,20 +1,51 @@
 # Hermes Vision
 
-Meet Hermes Vision: smart glasses that act like your ultimate road-trip co-pilot. 
+Smart glasses designed to detect driver drowsiness using computer vision and multiple sensors.
 
-This project is the official landing page and documentation for an AI-powered smart glasses research prototype. By tracking blinks, head nods, and vitals using multi-sensor integration (ESP32-S3 camera, MAX30102, and MPU6050), the glasses are designed to catch the early signs of driver drowsiness and give a warning before the driver drifts off. 
+## About the Project
 
-This repository contains the front-end landing page to showcase the hardware, how the system works, and its intended applications.
+Hermes Vision monitors signs of driver fatigue using eye movement, blinking, head movement and other sensor readings. The aim is to detect drowsiness early and alert the driver.
 
-## How I built it
-I built this website entirely from scratch using plain HTML and CSS in a single file. I wanted to keep it lightweight, fast, and dependency-free. 
+## Project Overview
 
-To make the layout clean and structured, I used CSS Flexbox to create responsive grids for the hardware information cards and the step-by-step system workflow. The design went through a few iterations. I initially tried a dark theme, but ultimately redesigned it into a clean, bright, and professional light theme with blue accents so it reads more like a proper research project page.
+<!-- Upload: A clear picture of the complete Hermes Vision glasses prototype -->
+![Hermes Vision Prototype](images/hermes-vision-prototype.jpg)
 
-## How to run it
-Because this is a static, vanilla HTML/CSS website, you don't need to install any servers, packages, or frameworks to view it.
+## How It Works
 
-1. Download or clone this repository to your computer.
-2. Find the `website.html` file in your file explorer.
-3. Double-click `website.html` to open it in your default web browser (Chrome, Firefox, Safari, etc.).
-4. To edit the code, open `website.html` in your text editor (like VS Code or Notepad) and refresh your browser to see your changes.
+- The camera tracks the driver's eyes and blinking.
+- The system monitors head movement to detect possible microsleep.
+- The MAX30102 measures heart rate and blood oxygen levels.
+- Sensor readings are combined to assess possible drowsiness.
+- An alert is triggered when signs of fatigue are detected.
+
+
+
+## Hardware
+
+- Raspberry Pi Zero 2 W
+- Raspberry Pi Camera V2 NoIR
+- MAX30102 heart-rate and SpO₂ sensor
+- MPU6050 accelerometer and gyroscope
+- 940nm infrared LEDs
+- Custom-designed PCB
+- Battery and power management components
+
+<!-- Upload: A picture of the electronics and components -->
+![Hardware Components](images/hardware-components.jpg)
+
+## PCB Design
+
+The project uses a custom PCB to connect the sensors and other electronic components.
+
+
+## Software
+
+The software processes camera and sensor data to monitor the driver's condition and identify possible signs of drowsiness.
+
+
+## Repository Contents
+
+- `website.html` – Project website
+- `PCB/` – PCB design files
+- `images/` – Project photographs and diagrams
