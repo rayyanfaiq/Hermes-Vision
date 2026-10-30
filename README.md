@@ -41,10 +41,3 @@ The project uses a custom PCB to connect the sensors and other electronic compon
 ## Software
 
 The software processes camera and sensor data to monitor the driver's condition and identify possible signs of drowsiness.
-
-
-## Repository Contents
-
-- `website.html` – Project website
-- `PCB/` – PCB design files
-- `images/` – Project photographs and diagrams
